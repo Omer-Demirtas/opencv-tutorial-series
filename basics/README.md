@@ -16,3 +16,4 @@ cv2.imread(path, 0)
 * Rotating the Image
 * Drawing a Rectangle
 * Displaying text
+* Saving image

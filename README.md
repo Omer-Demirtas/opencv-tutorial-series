@@ -11,5 +11,6 @@
     * Rotating the Image
     * Drawing a Rectangle
     * Displaying text
+    * Saving image
 ### Sources
 * [GeekForGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/#getting)

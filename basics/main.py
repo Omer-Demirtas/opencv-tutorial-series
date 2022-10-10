@@ -53,8 +53,14 @@ def main():
     # Line width
     rectangle = cv2.rectangle(output, (int(w * 0.2), int(h * 0.2)), (int(w * 0.8), int(h * 0.8)), (255, 255, 255), 2)
 
-
-
+    # Parameters
+    # Image
+    # Top-left corner co-ordinates
+    # Bottom-right corner co-ordinates
+    # Color (in BGR format)
+    # Line width
+    # Adding the text using putText() function
+    rectangle = cv2.putText(rectangle, 'OpenCV Tutorial', (int(w * 0.2), int(h * 0.15)), cv2.FONT_HERSHEY_SIMPLEX, 4, (255, 255, 255), 2)
 
     # to show image with new window
     cv2.imshow("image", image)
@@ -62,6 +68,8 @@ def main():
     cv2.imshow("resize", resize)
     cv2.imshow("resize_aspect", resize_aspect)
     cv2.imshow("rectangle", rectangle)
+
+    cv2.imwrite("filename.jpg", rectangle)
 
     # To hold the window on screen
     cv2.waitKey(0)
