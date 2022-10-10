@@ -41,11 +41,27 @@ def main():
     # Resizing the image
     resize_aspect = cv2.resize(image, dim)
 
+    # We are copying the original image,
+    # as it is an in-place operation.
+    output = image.copy()
+
+    # Parameters
+    # Image
+    # Top-left corner co-ordinates
+    # Bottom-right corner co-ordinates
+    # Color (in BGR format)
+    # Line width
+    rectangle = cv2.rectangle(output, (int(w * 0.2), int(h * 0.2)), (int(w * 0.8), int(h * 0.8)), (255, 255, 255), 2)
+
+
+
+
     # to show image with new window
     cv2.imshow("image", image)
     cv2.imshow("region", region)
     cv2.imshow("resize", resize)
     cv2.imshow("resize_aspect", resize_aspect)
+    cv2.imshow("rectangle", rectangle)
 
     # To hold the window on screen
     cv2.waitKey(0)
