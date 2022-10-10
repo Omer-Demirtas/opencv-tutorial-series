@@ -2,7 +2,7 @@ import cv2
 
 
 def main():
-    q
+
     # to read image for file
     # to read grayscale mode -> cv2.imread(path, 0)
     image = cv2.imread("images/image.jpg")
