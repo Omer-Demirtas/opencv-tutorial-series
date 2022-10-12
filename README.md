@@ -12,5 +12,11 @@
     * Drawing a Rectangle
     * Displaying text
     * Saving image
+* [Series 1](basics)
+  * Scaling
+  * Rotating
+  * Shifting 
+  * Edge Detection
+  
 ### Sources
 * [GeekForGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/#getting)
